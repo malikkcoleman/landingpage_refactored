@@ -1,0 +1,330 @@
+@font-face {
+    font-family: OpenSansLight;
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-display: swap;
+}
+
+.show-desktop{
+    display:flex;
+}
+
+.show-mobile{
+    display:none;
+}
+
+#menuBtn{
+    display:none;
+}
+
+/* NAV */
+
+nav{
+    flex-direction: row;
+    background:#113448;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    width:100%;
+    z-index:1;
+}
+
+.nav-transparent{
+    background:#11344805;
+    transition: 0.2s;
+}
+
+.nav-solid{
+    background:#113448;
+    transition: 0.2s;
+}
+
+.logo{
+    margin:25px 0 25px 80px;
+}
+
+.logo .tuluCanada{
+    width:250px;
+}
+
+.logo .tuluLogo{
+    width:60px;
+}
+
+.links{
+    flex-direction: row;
+}
+
+.navigationList{
+    flex-direction: row;
+    width:500px;
+    justify-content: space-evenly;
+}
+
+.navigationLink{
+    color:white;
+    margin:25px 0 25px 0;
+    font-size:14px;
+}
+
+.navigationLink:hover{
+    color:#14bf98;
+    transition: 0.2s;
+}
+
+.earlyAccess{
+    color:#14bf98;
+    font-size:14px;
+    margin:25px 80px 25px 0;
+}
+
+/* HEADER */
+
+header{
+    margin-top:-120px;
+    background:url(../images/mint_dress_1920px-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    height:140vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header .heading{
+    color:white;
+    font-size:3.5em;
+    font-family: OpenSansBold;
+    text-align: center;
+}
+
+header p{
+    color:white;
+    margin:25px 0;
+}
+
+/* FORM */
+
+form{
+    width:400px;
+}
+
+.form-group:nth-child(1),.form-group:nth-child(2),.form-group:nth-child(3){
+    background:white;
+    border-radius: 5px;
+    padding:5px 15px;
+    flex-direction: column-reverse;
+    margin:10px 0;
+}
+
+.form-control-input{
+    border:none;
+}
+
+.label-control{
+    color:#787976;
+    font-family: OpenSansLight;
+}
+
+.help-block.with-errors{
+    color:#787976;
+    font-size:smaller;
+}
+
+.form-group.checkbox{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:10px 0;
+}
+
+.form-group.checkbox p{
+    margin:0 5px;
+    color:#787976;
+    font-size:smaller;
+}
+
+.form-group.checkbox a{
+    font-size:smaller;
+}
+
+.form-group button{
+    background:#14bf98;
+    color:white;
+    border:2px solid #14bf98;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0;
+    margin:10px 0;
+    border-radius: 5px;
+}
+
+.form-group button{
+    background:#14bf98;
+    color:white;
+    transition: 0.5s;
+}
+
+.form-group button:hover{
+    background:#14bf9703;
+    color:#14bf98;
+    transition: 0.5s;
+}
+
+.scrollBtn{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background:#14bf98;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+
+#opacity-hide{
+    opacity:0;
+    transition: 0.5s;
+}
+
+#opacity-show{
+    opacity:1;
+    transition: 0.5s;
+}
+
+.scrollBtn i{
+    color:white;
+}
+
+
+/* FOOTER */
+
+footer{
+    background:#113448;
+    align-items: center;
+    padding:25px 0;
+}
+
+footer p{
+    color:white;
+    font-family: OpenSansLight;
+    font-size: smaller;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .show-desktop{
+        display:none;
+    }
+    
+    .show-mobile{
+        display:Flex;
+    }
+
+    nav{
+        background:#113448;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .logo{
+        margin:15px 15px;
+        z-index: 1;
+    }
+
+    #menuBtn{
+        display:flex;
+
+    }
+
+    .links{
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .links i{
+        margin: 0 15px;
+        color:white;
+    }
+
+    .navigationList{
+        top:60px;
+        position: absolute;
+        flex-direction: column;
+        background:#113448;
+        width:100%;
+        height:0px;
+        justify-content: unset;
+        padding:0px 0 0px 0;
+        z-index:-2;
+        overflow: hidden;
+    }
+
+    .navigationListItem{
+        z-index: -2;
+    }
+
+    .navigationLink{
+        z-index: -1;
+        color:white;
+        margin:10px 25px;
+        font-size:14px;
+    }
+
+    .navigationLink:hover{
+        color:#14bf98;
+        transition: 0.2s;
+    }
+
+    .earlyAccess{
+        margin:25px 0;
+    }
+
+    header{
+        margin-top:-20px;
+        background:url(../images/mint_dress_1920px.jpg);
+        background-size: cover;
+        background-position: center;
+        height:100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .heading{
+        font-size:1.5em;
+        font-family: OpenSansBold;
+        text-align: center;
+    }
+
+    header p{
+        width:250px;
+        text-align: center;
+    }
+
+    form{
+        width:60vmin;
+    }
+
+    .form-group.checkbox{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:10px 0;
+    }
+    
+    .form-group.checkbox p{
+        margin:0 5px;
+        color:#787976;
+        font-size:smaller;
+    }
+    
+    .form-group.checkbox a{
+        font-size:smaller;
+    }
+}

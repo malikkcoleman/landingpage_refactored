@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulu Canada</title>
+
+    <link rel="preload" as="style" href="css/reset.css">
+    <link rel="preload" as="style" href="webfonts/styles/all.css">
+    <link rel="preload" as="style" href="css/carousel.css">
+    <link rel="preload" as="style" href="css/team.css">
+    <link rel="preload" href="fonts/OpenSans-Bold.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Regular.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Light.ttf" as="font" type="font/woff2" crossorigin>
+
+    <link rel="preload" href="webfonts/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="webfonts/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="webfonts/styles/all.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="icon" href="images/tulu-favicon_RGB.jpg">
+    
+
+    <script type="text/javascript" src="js/jquery/dist/jquery.min.js"></script>>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179392990-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-179392990-1');
+    </script> -->
+</head>
+<body onscroll="test()">
+    <div class="wrapper">
+        <nav class="nav-transparent">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/tuluCanada-logo_white.png" class="show-desktop tuluCanada">
+                    <img src="images/tulu-logo_white.png" class="show-mobile tuluLogo">
+                </a>
+            </div>
+            <div class="links">
+                <i id="menuBtn" class="fas fa-bars fa-2x" onclick="sidemenu()"></i>
+                <ul class="navigationList">
+                    <li class="navigationListItem">
+                        <a href="index.html#home" class="navigationLink">HOME</a>
+                    </li>
+                    <li class="navigationListItem">
+                        <a href="index.html#intro" class="navigationLink">INTRO</a>
+                    </li>
+                    <li class="navigationListItem">
+                        <a href="index.html#benefits" class="navigationLink">BENEFITS</a>
+                    </li>
+                    <li class="navigationListItem">
+                        <a href="index.html#about" class="navigationLink">ABOUT</a>
+                    </li>
+                    <li class="navigationListItem">
+                        <a href="team.html" class="navigationLink">TEAM</a>
+                    </li>
+                </ul>
+                <a href="earlyAccess.html" class="earlyAccess">Get Early Access</a>
+            </div>
+        </nav>
+        <header>
+            <h2>Our Team</h2>
+            <p>We're only as strong and as knowledgeable as our team. Here are the men and women that are going to reinvent the marketplace for autos.</p>
+            <div class="carouselContainer">
+                <div id="teamMemberList">
+                    
+                </div>
+                <i class="fas fa-angle-left  left-arrow fa-2x" onclick="goLeft()"></i>
+                <i class="fas fa-angle-right right-arrow fa-2x"onclick="goRight()"></i>
+                <div class="memberCountPage" id="memberCountPage">
+                </div>
+            </div>
+        </header>
+        <div class="scrollBtn" id="opacity-hide">
+            <a href="#">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+        <footer>
+            <p>Copyright &copy 2020 Tulu</p>
+        </footer>
+    </div>
+</body>
+<script src="js/app.js"></script>
+<script src="js/carousel.js"></script>
+</html>

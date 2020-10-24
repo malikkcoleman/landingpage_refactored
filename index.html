@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulu Canada</title>
+
+    <link rel="preload" as="style" href="css/reset.css">
+    <link rel="preload" as="style" href="webfonts/styles/all.css">
+    <link rel="preload" as="style" href="css/style.css">
+    <link rel="preload" as="script" href="js/app.js">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="webfonts/styles/all.css"/>
+    <link rel="preload" href="fonts/OpenSans-Bold.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Regular.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Light.ttf" as="font" type="font/woff2" crossorigin>
+
+    <link rel="preload" href="webfonts/webfonts/fa-brands-400.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="webfonts/webfonts/fa-solid-900.ttf" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="webfonts/styles/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/tulu-favicon_RGB.jpg">
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179392990-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-179392990-1');
+    </script> -->
+</head>
+<body onscroll="test()">
+    <div class="wrapper" id="#">
+        <nav class="nav-transparent">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/tuluCanada-logo_white.png" class="show-desktop tuluCanada">
+                    <img src="images/tulu-logo_white.png" class="show-mobile tuluLogo">
+                </a>
+            </div>
+            <div class="links">
+                <i id="menuBtn" class="fas fa-bars fa-2x" onclick="sidemenu()"></i>
+                <ul class="navigationList">
+                    <li class="navigationListItem">
+                        <a href="#home" class="navigationLink">HOME</a>
+                    </li>
+                    <li class="navigationListItem">
+                        <a href="#intro" class="navigationLink">INTRO</a>
+                    </li>
+                    <li class="navigationListItem">
+                        <a href="#benefits" class="navigationLink">BENEFITS</a>
+                    </li>
+                    <li class="navigationListItem">
+                        <a href="#about" class="navigationLink">ABOUT</a>
+                    </li>
+                    <li class="navigationListItem">
+                        <a href="team.html" class="navigationLink">TEAM</a>
+                    </li>
+                </ul>
+                <a href="earlyAccess.html" class="earlyAccess">Get Early Access</a>
+            </div>
+        </nav>
+        <header id="home">
+            <h1 class="heading">
+                A revolutionary social marketplace
+            </h1>
+            <p>Subscribe and get early access to join the tulu team!        </p>
+            <form id="contactForm" data-toggle="validator" data-focus="false" action="contactform-process.php" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control-input" id="cname" required>
+                    <label class="label-control" for="cname">Name</label>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control-input" id="cemail" required>
+                    <label class="label-control" for="cemail">Email</label>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                    <select name="province" Class="form-control-input" id="cprovince" required>
+                        <option value=""></option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="British Columbia">British Columbia</option>
+                        <option value="Manitoba">Manitoba</option>
+                        <option value="New Brunswick">New Brunswick</option>
+                        <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                        <option value="Northwest Territories">Northwest Territories</option>
+                        <option value="Nova Scotia">Nova Scotia</option>
+                        <option value="Nunavut">Nunavut</option>
+                        <option value="Ontario">Ontario</option>
+                        <option value="Prince Edward Island">Prince Edward Island</option>
+                        <option value="Quebec">Quebec</option>
+                        <option value="Saskatchewan">Saskatchewan</option>
+                        <option value="Yukon">Yukon</option>
+                    </select>
+                    <label class="label-control" for="province">Province</label>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>
+                    <p> I agree with tulu's stated</p>
+                    <a style="color: white" href="privacy-policy.html">Privacy Policy</a>  
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                    <button style="font-size: 0.9em" type="submit" class="form-control-submit-button">Get Early Access</button>
+                </div>
+                <div class="form-message">
+                    <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                </div>
+            </form>
+        </header>
+        <div class="autoExp" id="intro">
+            <div class="textContainer">
+                <h2 class="heading">
+                    Redefining the auto buying experience...
+                </h2>
+                <p>The auto industry has yet to evolve to the next level. Tulu is the marketplace that leads, supports, and rewards you through the sales process.</p>
+            </div>
+            <div class="imageContainer">
+                <img src="images/mint_umbrellas_690px.jpg" alt="">
+            </div>
+        </div>
+        <div class="accessTulu" id="benefits">
+            <h2 class="heading">Get early access as a tulu</h2>
+            <h3>Earn secondary income</h3>
+            <p>On average, our Tulus can earn anywhere between $200 - $3000 for every person you help in your network purchase a vehicle and possibly more!</p>
+            <p>**The payout is dependent on the make and model of the vehicle.</p>
+            <ul class="howToRewardList">
+                <li class="listItem">
+                    <div class="hexagon">
+                        <i class="fas fa-tv fa-2x"></i>
+                    </div>
+                    <h4>FIRST</h4>
+                    <p>Help your friend find the vehicle they would like to purchase by browsing our gallery from dealerships near you.</p>
+                </li>
+                <li class="listItem">
+                    <div class="hexagon">
+                        <i class="fas fa-car fa-2x"></i>
+                    </div>
+                    <h4>SECOND</h4>
+                    <p>Book an appointment through our site and the vehicle will be ready for you and your friend to test drive. Work directly with the Sales Manager to finalize the sale.
+                    </p>
+                </li>
+                <li class="listItem">
+                    <div class="hexagon">
+                        <i class="fas fa-money-check-alt fa-2x"></i>
+                    </div>
+                    <h4>THIRD</h4>
+                    <p>Get rewarded ($$) and celebrate with your friend.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="vision" id="about">
+            <h2 class="heading">VISION</h2>
+            <div class="card">
+                <img src="images/glasses398.jpg" alt="">
+                <div class="content">
+                    <p>We are building a social marketplace and system where the process is transparent, our customers are working with people they trust and continue to innovate the consumer rewards space.</p><br>
+                    <p><i>We foster transparency, positive customer experience and opportunity</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="values">
+            <h2 class="heading">VALUES</h2>
+            <ul class="cardContainer">
+                <li class="card">
+                    <img src="images/cytonn-photography-n95VMLxqM2I-unsplash.jpg" alt="">
+                    <div class="content">
+                        <h3>Integrity and trust</h3>
+                        <p>As our most important value, we never compromise on integrity and trust. We collaborate with our customers to achieve their goals and ambitions. We respect and work together with local communities. At the heart of it all, we always take care of the people that make up Tulu and the values Tulu stands for.</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <img src="images/suv-inov398.jpg" alt="">
+                    <div class="content">
+                        <h3>Innovate for a better future</h3>
+                        <p>Our future is full of opportunities. Just as the consumer landscape and technology space is changing, we too adapt and innovate, to enrich the quality of life of future generations.
+                        </p>
+                    </div>
+                </li>
+                <li class="card">
+                    <img src="images/quality.jpg" alt="">
+                    <div class="content">
+                        <h3>Commit to the highest quality standards</h3>
+                        <p>Quality always comes first. No exceptions. We will commit to this promise with confidence and conviction.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="stayConnected">
+            <h3>STAY CONNECTED</h3>
+            <a href="">
+                <h2>Get Early Access</h2>
+            </a>
+            <p>Don't miss your chance to join the tulu team, and fill out the "Get Early Access" form for early access.
+                Contact us at info@tulucanada.com.</p>
+            <h4>Follow tulu On Social Media</h4>
+            <ul class="socialMediaList">
+                <li class="listItem">
+                    <a href="https://www.facebook.com/tulu.canada.9" target="_blank">
+                        <div class="hex-white">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </div>
+                        <div class="hexagon">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="listItem">
+                    <a href="https://twitter.com/tulucanada" target="_blank">
+                        <div class="hex-white">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </div>
+                        <div class="hexagon">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="listItem">
+                    <a href="https://www.instagram.com/tulucanada/" target="_blank">
+                        <div class="hex-white">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </div>
+                        <div class="hexagon">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+            <div class="scrollBtn" id="opacity-hide">
+                <a href="#">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </div>
+        <footer>
+            <p>Copyright &copy 2020 Tulu</p>
+        </footer>
+    </div>
+</body>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
+<script src="js/invTableDataWsearchDd.js"></script>
+</html>

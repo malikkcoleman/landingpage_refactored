@@ -1,0 +1,38 @@
+/* Fonts */
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-display: swap;
+}
+
+
+
+/* CSS Reset */
+
+*{
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:#1A2A33;
+    font-family: OpenSans;
+    cursor: default;;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input,select{
+    background:transparent;
+}
+
+title,script{
+    display:none;
+}
+
+body{
+    /* width:100vw; */
+}

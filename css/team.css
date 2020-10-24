@@ -1,0 +1,239 @@
+@font-face {
+    font-family: OpenSansLight;
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-display: swap;
+}
+
+.show-desktop{
+    display:flex;
+}
+
+.show-mobile{
+    display:none;
+}
+
+#menuBtn{
+    display:none;
+}
+
+/* NAV */
+
+nav{
+    flex-direction: row;
+    background:#113448;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index:1;
+}
+
+.nav-transparent{
+    background:#11344805;
+    transition: 0.2s;
+}
+
+.nav-solid{
+    background:#113448;
+    transition: 0.2s;
+}
+
+.logo{
+    margin:25px 0 25px 80px;
+}
+
+.logo .tuluCanada{
+    width:250px;
+}
+
+.logo .tuluLogo{
+    width:60px;
+}
+
+.links{
+    flex-direction: row;
+}
+
+.navigationList{
+    flex-direction: row;
+    width:500px;
+    justify-content: space-evenly;
+}
+
+.navigationLink{
+    color:white;
+    margin:25px 0 25px 0;
+    font-size:14px;
+}
+
+.navigationLink:hover{
+    color:#14bf98;
+    transition: 0.2s;
+}
+
+.earlyAccess{
+    color:#14bf98;
+    font-size:14px;
+    margin:25px 80px 25px 0;
+}
+
+/* HEADER */
+
+header{
+    margin-top:-120px;
+    background:url(../images/mint_dress_1920px.jpg);
+    background-size: cover;
+    background-position: center;
+    height:120vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2{
+    color:#14bf98;
+    font-size:3em;
+    font-family: OpenSansBold;
+    text-align: center;
+}
+
+header p{
+    color:white;
+    text-align: center;
+    width:600px;
+    margin:25px 0;
+}
+
+
+.scrollBtn{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background:#14bf98;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+
+#opacity-hide{
+    opacity:0;
+    transition: 0.5s;
+}
+
+#opacity-show{
+    opacity:1;
+    transition: 0.5s;
+}
+
+.scrollBtn i{
+    color:white;
+}
+
+/* FOOTER */
+
+footer{
+    background:#113448;
+    align-items: center;
+    padding:25px 0;
+}
+
+footer p{
+    color:white;
+    font-family: OpenSansLight;
+    font-size: smaller;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .show-desktop{
+        display:none;
+    }
+    
+    .show-mobile{
+        display:Flex;
+    }
+
+    nav{
+        background:#113448;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .logo{
+        margin:15px 15px;
+        z-index: 1;
+    }
+
+    #menuBtn{
+        display:flex;
+
+    }
+
+    .links{
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .links i{
+        margin: 0 15px;
+        color:white;
+    }
+
+    .navigationList{
+        top:60px;
+        position: absolute;
+        flex-direction: column;
+        background:#113448;
+        width:100%;
+        height:0px;
+        justify-content: unset;
+        padding:0px 0 0px 0;
+        z-index:-2;
+        overflow: hidden;
+    }
+
+    .navigationListItem{
+        z-index: -2;
+    }
+
+    .navigationLink{
+        z-index: -1;
+        color:white;
+        margin:10px 25px;
+        font-size:14px;
+    }
+
+    .navigationLink:hover{
+        color:#14bf98;
+        transition: 0.2s;
+    }
+
+    .earlyAccess{
+        margin:25px 0;
+    }
+
+    header{
+        margin-top:-25px;
+        background:url(../images/mint_dress_1920px-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        height:100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header p{
+        color:white;
+        text-align: center;
+        width:300px;
+        margin:25px 0;
+    }
+}

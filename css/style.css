@@ -1,0 +1,742 @@
+@font-face {
+    font-family: OpenSansLight;
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-display: swap;
+}
+
+.show-desktop{
+    display:flex;
+}
+
+.show-mobile{
+    display:none;
+}
+
+#menuBtn{
+    display:none;
+}
+
+/* NAV */
+
+nav{
+    flex-direction: row;
+    background:#113448;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    width:100%;
+    z-index:1;
+}
+
+.nav-transparent{
+    background:#11344805;
+    transition: 0.2s;
+}
+
+.nav-solid{
+    background:#113448;
+    transition: 0.2s;
+}
+
+.logo{
+    margin:25px 0 25px 80px;
+}
+
+.logo .tuluCanada{
+    width:250px;
+}
+
+.logo .tuluLogo{
+    width:60px;
+}
+
+.links{
+    flex-direction: row;
+}
+
+.navigationList{
+    flex-direction: row;
+    width:500px;
+    justify-content: space-evenly;
+}
+
+.navigationLink{
+    color:white;
+    margin:25px 0 25px 0;
+    font-size:14px;
+}
+
+.navigationLink:hover{
+    color:#14bf98;
+    transition: 0.2s;
+}
+
+.earlyAccess{
+    color:#14bf98;
+    font-size:14px;
+    margin:25px 80px 25px 0;
+}
+
+/* HEADER */
+
+header{
+    margin-top:-120px;
+    background:url(../images/mint_dress_1920px.jpg);
+    background-size: cover;
+    background-position: center;
+    height:140vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header .heading{
+    color:white;
+    font-size:3.5em;
+    font-family: OpenSansBold;
+    text-align: center;
+}
+
+header p{
+    color:white;
+    margin:25px 0;
+}
+
+/* FORM */
+
+form{
+    width:400px;
+}
+
+.form-group:nth-child(1),.form-group:nth-child(2),.form-group:nth-child(3){
+    background:white;
+    border-radius: 5px;
+    padding:5px 15px;
+    flex-direction: column-reverse;
+    margin:10px 0;
+}
+
+.form-control-input{
+    border:none;
+}
+
+.label-control{
+    color:#787976;
+    font-family: OpenSansLight;
+}
+
+.help-block.with-errors{
+    color:#787976;
+    font-size:smaller;
+}
+
+.form-group.checkbox{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:10px 0;
+}
+
+.form-group.checkbox p{
+    margin:0 5px;
+    color:#787976;
+    font-size:smaller;
+}
+
+.form-group.checkbox a{
+    font-size:smaller;
+}
+
+.form-group button{
+    background:#14bf98;
+    color:white;
+    border:2px solid #14bf98;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0;
+    margin:10px 0;
+    border-radius: 5px;
+}
+
+.form-group button{
+    background:#14bf98;
+    color:white;
+    transition: 0.5s;
+}
+
+.form-group button:hover{
+    background:#14bf9703;
+    color:#14bf98;
+    transition: 0.5s;
+}
+
+/* Auto Experience */
+
+.autoExp{
+    flex-direction: row;
+    justify-content: center;
+    padding:100px 0;
+}
+
+.autoExp .textContainer{
+    width:400px;
+    margin:0 100px 0 0 ;
+}
+
+.autoExp .textContainer .heading{
+    font-family: OpenSansBold;
+    margin:50px 0 30px 0;
+    font-size: xx-large;
+}
+
+.autoExp .textContainer p{
+    color:#787976;
+}
+
+.autoExp .imageContainer{
+    width:600px;
+    height:600px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.autoExp .imageContainer img{
+    transition: 0.5s;
+}
+
+.autoExp .imageContainer img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+/* Get Early Access as a tulu */
+.accessTulu{
+    background:#8B9196;
+    padding:80px 0;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.accessTulu h2,.accessTulu h3,.accessTulu p{
+    /* border:1px solid red; */
+    width:70vmax;
+}
+
+.accessTulu .heading{
+    color:#484a46;
+    font-size: xx-large;
+}
+
+.accessTulu h3{
+    color:#484a46;
+    font-size: x-large;
+}
+
+.accessTulu p:nth-child(3){
+    color:white;
+    font-size: larger;
+}
+
+.accessTulu p:nth-child(4){
+    color:lightgray;
+}
+
+.howToRewardList{
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+.howToRewardList .listItem{
+    margin:30px 50px 0 50px;
+}
+
+.howToRewardList .listItem h4{
+    color:white;
+    font-size: larger;
+}
+
+
+.howToRewardList .listItem p{
+    width:300px;
+    font-size: medium;
+    margin:20px 0 0 0;
+}
+
+.hexagon{
+    height:100px;
+    width:100px;
+    background:url(../images/hexagon-green.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0;
+}
+
+.hexagon i{
+    color:white;
+}
+
+/* VISION */
+
+.vision{
+    align-items: center;
+    padding:80px 0;
+}
+.vision .heading{
+    color:#14bf98;
+    font-family: OpenSansBold;
+    margin:10px 0;
+}
+
+.vision .card{
+    width:600px;
+    border:1px solid #484a4633;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.vision .card .content{
+    padding:40px;
+}
+
+.vision .card .content p,.vision .card .content p i{
+    color:#787976;
+    text-align: center;
+}
+
+
+/* VALUES */
+
+.values{
+    align-items: center;
+    padding:80px 0;
+}
+.values .heading{
+    color:#14bf98;
+    font-family: OpenSansBold;
+    margin:10px 0;
+}
+
+.values .cardContainer{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.values .card{
+    border:1px solid red;
+    width:350px;
+    border:1px solid #484a4633;
+    border-radius: 10px;
+    overflow: hidden;
+    margin:0 20px;
+}
+
+.values .card .content h3{
+    padding:25px 15px 0 15px;
+    text-align: center;
+    color:#484a46;
+}
+
+.values .card .content p{
+    color:#787976;
+    padding:25px 15px;
+    text-align: center;
+    color:#787976;;
+}
+
+.values .cardContainer .card img{
+    width:350px;
+    height:250px;
+}
+
+/* STAY CONNECTED */
+
+.stayConnected{
+    padding:50px 0 100px 0;
+    width:550px;
+    align-self: center;
+}
+
+.stayConnected h3{
+    color:#14bf98;
+    font-size: x-large;
+}
+
+.stayConnected a h2{
+    color:#787976;
+    font-family: OpenSansBold;
+    font-size: 2.5em;
+}
+
+.stayConnected a h2:hover{
+    color:#14bf98;
+}
+
+.stayConnected p{
+    color:#787976;
+    margin:10px 0;
+}
+
+.stayConnected h4{
+    color:#484a46;
+    font-size: xx-large;
+    font-family: OpenSansBold;
+}
+
+.socialMediaList{
+    flex-direction: row;
+}
+
+.socialMediaList .listItem{
+    margin:0 15px 0 0;
+    position: relative;
+}
+
+.socialMediaList .listItem .hexagon{
+    height:70px;
+    width:70px;
+    background:url(../images/hexagon-green.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+}
+
+.socialMediaList .listItem .hex-white{
+    height:70px;
+    width:70px;
+    background:white;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    z-index:-1;
+    top:20px;
+}
+
+.socialMediaList .listItem .hex-white i{
+    color:#14bf98;
+}
+
+.socialMediaList .listItem .hexagon{
+    opacity:1;
+    transition:0.5s;
+}
+
+.socialMediaList .listItem .hexagon:hover{
+    opacity:0;
+    transition:0.5s;
+}
+
+
+.socialMediaList .listItem .hexagon:hover .hex-white{
+    opacity:0;
+    transition:0.5s;
+}
+
+
+.scrollBtn{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background:#14bf98;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+
+#opacity-hide{
+    opacity:0;
+    transition: 0.5s;
+}
+
+#opacity-show{
+    opacity:1;
+    transition: 0.5s;
+}
+
+.scrollBtn i{
+    color:white;
+}
+
+/* FOOTER */
+
+footer{
+    background:#113448;
+    align-items: center;
+    padding:25px 0;
+}
+
+footer p{
+    color:white;
+    font-family: OpenSansLight;
+    font-size: smaller;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .show-desktop{
+        display:none;
+    }
+    
+    .show-mobile{
+        display:Flex;
+    }
+
+    nav{
+        background:#113448;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .logo{
+        margin:15px 15px;
+        z-index: 1;
+    }
+
+    #menuBtn{
+        display:flex;
+
+    }
+
+    .links{
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .links i{
+        margin: 0 15px;
+        color:white;
+    }
+
+    .navigationList{
+        top:60px;
+        position: absolute;
+        flex-direction: column;
+        background:#113448;
+        width:100%;
+        height:0px;
+        justify-content: unset;
+        padding:0px 0 0px 0;
+        z-index:-2;
+        overflow: hidden;
+    }
+
+    .navigationListItem{
+        z-index: -2;
+    }
+
+    .navigationLink{
+        z-index: -1;
+        color:white;
+        margin:10px 25px;
+        font-size:14px;
+    }
+
+    .navigationLink:hover{
+        color:#14bf98;
+        transition: 0.2s;
+    }
+
+    .earlyAccess{
+        margin:25px 0;
+    }
+
+    header{
+        margin-top:0px;
+        background:url(../images/mint_dress_1920px-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        height:90vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .heading{
+        font-size:24px;
+        font-family: OpenSansBold;
+        text-align: center;
+    }
+
+    header p{
+        width:250px;
+        text-align: center;
+    }
+
+    form{
+        width:60vmin;
+    }
+
+    .form-group.checkbox{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:10px 0;
+    }
+    
+    .form-group.checkbox p{
+        margin:0 5px;
+        color:#787976;
+        font-size:smaller;
+    }
+    
+    .form-group.checkbox a{
+        font-size:smaller;
+    }
+
+    .autoExp{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding:20px 0 50px 0;
+    }
+    .autoExp .textContainer{
+        width:250px;
+        margin:0 0 30px 0 ;
+    }
+
+    .autoExp .textContainer .heading,.autoExp .textContainer p{
+        text-emphasis: center;
+    }
+    
+    .autoExp .imageContainer{
+        width: 70vw;
+        height:20vh;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    .accessTulu h2,.accessTulu h3,.accessTulu p{
+        /* border:1px solid red; */
+        width:80vw;
+    }
+
+    .accessTulu .heading{
+        font-family: OpenSansBold;
+        color:#484a46;
+        font-size: x-large;
+        margin:5px 0;
+    }
+    
+    .accessTulu h3{
+        color:#484a46;
+        font-size: larger;
+        margin:5px 0;
+    }
+    
+    .accessTulu p:nth-child(3){
+        color:white;
+        font-size: larger;
+        margin:5px 0;
+    }
+
+    
+    .howToRewardList{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin:50px 0 0 0;
+        
+    }
+    .howToRewardList .listItem{
+        margin:15px 0;
+        align-items: center;
+    }
+
+    .howToRewardList .listItem h4{
+        color:white;
+        font-size: larger;
+    }
+
+
+    .howToRewardList .listItem p{
+        margin:5px 0 0 0;
+        text-align: center;
+        font-size: medium;
+    }
+
+    .hexagon{
+        height:100px;
+        width:100px;
+        background:url(../images/hexagon-green.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        margin:20px 0;
+    }
+
+    .hexagon i{
+        color:white;
+    }
+
+        
+    .vision{
+        align-items: center;
+        padding:80px 0;
+    }
+    .vision .heading{
+        color:#14bf98;
+        font-family: OpenSansBold;
+        margin:10px 0;
+    }
+
+    .vision .card{
+        width:300px;
+        border:1px solid #484a4633;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .vision .card .content{
+        padding:20px;
+    }
+
+    .values .card{
+        border:1px solid red;
+        width:300px;
+        border:1px solid #484a4633;
+        border-radius: 10px;
+        overflow: hidden;
+        margin:0 20px;
+    }
+
+    .vision .card img{
+        height:200px;
+        width:300px;
+    }
+
+    
+    .values .cardContainer{
+        flex-direction: column;
+    }
+
+    .values .card{
+        width:300px;
+        border:1px solid #484a4633;
+        border-radius: 10px;
+        overflow: hidden;
+        margin:20px 0;
+    }
+
+    .values .cardContainer .card img{
+        width:300px;
+        height:250px;
+    }
+
+    
+    .stayConnected{
+        width:350px;
+    }
+}

@@ -1,0 +1,331 @@
+@font-face {
+    font-family: OpenSansLight;
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-display: swap;
+}
+
+.show-desktop{
+    display:flex;
+}
+
+.show-mobile{
+    display:none;
+}
+
+#menuBtn{
+    display:none;
+}
+
+/* NAV */
+
+nav{
+    flex-direction: row;
+    background:#113448;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    width:100%;
+    z-index:1;
+}
+
+.nav-transparent{
+    background:#11344805;
+    transition: 0.2s;
+}
+
+.nav-solid{
+    background:#113448;
+    transition: 0.2s;
+}
+
+.logo{
+    margin:25px 0 25px 80px;
+}
+
+.logo .tuluCanada{
+    width:250px;
+}
+
+.logo .tuluLogo{
+    width:60px;
+}
+
+.links{
+    flex-direction: row;
+}
+
+.navigationList{
+    flex-direction: row;
+    width:500px;
+    justify-content: space-evenly;
+}
+
+.navigationLink{
+    color:white;
+    margin:25px 0 25px 0;
+    font-size:14px;
+}
+
+.navigationLink:hover{
+    color:#14bf98;
+    transition: 0.2s;
+}
+
+.earlyAccess{
+    color:#14bf98;
+    font-size:14px;
+    margin:25px 80px 25px 0;
+}
+
+/* HEADER */
+
+header{
+    background:#153e52;
+    height:40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    color:white;
+    font-size: 2.5em;
+    font-family: OpenSansBold;
+}
+
+/* BreadCrumbs */
+.breadCrumbs{
+    flex-direction: row;
+    padding:50px 250px;
+}
+
+.breadCrumbs,.breadCrumbs p,.breadCrumbs p a{
+    color:#787976;
+}
+
+/* Content */
+
+.content{
+    padding:50px 250px;
+}
+
+.content h2,.content h3{
+    margin:10px 0;
+    color:#484a46;
+}
+.content p b{
+    color:#484a46;
+}
+
+.content p{
+    margin:5px 0;
+    color:#787976;
+}
+
+.content ul{
+    padding:10px 30px 30px 30px;
+    list-style-type: disc;
+}
+
+.content ul li{
+    color:#787976;
+}
+
+.content ul li p{
+    padding:0 10px 5px 10px;
+}
+
+.content ul li b{
+    padding:10px 0 0 0;
+}
+
+/* back button */
+
+button{
+    width:150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding:10px 0;
+    border-radius: 10px;
+    background:white;
+    border:2px solid #787976;
+    color:#787976;
+}
+
+button{
+    background:white;
+    border:2px solid #787976;
+    color:#787976;
+    transition:0.2s;
+}
+
+button:hover{
+    background:#787976;
+    border:2px solid #787976;
+    color:white;
+    transition:0.2s;
+}
+
+/* Scroll */
+
+.scrollBtn{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background:#14bf98;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+
+#opacity-hide{
+    opacity:0;
+    transition: 0.5s;
+}
+
+#opacity-show{
+    opacity:1;
+    transition: 0.5s;
+}
+
+.scrollBtn i{
+    color:white;
+}
+
+/* FOOTER */
+
+footer{
+    background:#113448;
+    align-items: center;
+    padding:25px 0;
+}
+
+footer p{
+    color:white;
+    font-family: OpenSansLight;
+    font-size: smaller;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .show-desktop{
+        display:none;
+    }
+    
+    .show-mobile{
+        display:Flex;
+    }
+
+    nav{
+        background:#113448;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .logo{
+        margin:15px 15px;
+        z-index: 1;
+    }
+
+    #menuBtn{
+        display:flex;
+
+    }
+
+    .links{
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .links i{
+        margin: 0 15px;
+        color:white;
+    }
+
+    .navigationList{
+        top:60px;
+        position: absolute;
+        flex-direction: column;
+        background:#113448;
+        width:100%;
+        height:0px;
+        justify-content: unset;
+        padding:0px 0 0px 0;
+        z-index:-2;
+        overflow: hidden;
+    }
+
+    .navigationListItem{
+        z-index: -2;
+    }
+
+    .navigationLink{
+        z-index: -1;
+        color:white;
+        margin:10px 25px;
+        font-size:14px;
+    }
+
+    .navigationLink:hover{
+        color:#14bf98;
+        transition: 0.2s;
+    }
+
+    .earlyAccess{
+        margin:25px 0;
+    }
+
+    /* BreadCrumbs */
+    .breadCrumbs{
+        flex-direction: row;
+        padding:50px 20px;
+    }
+
+    .breadCrumbs,.breadCrumbs p,.breadCrumbs p a{
+        color:#787976;
+    }
+
+    /* Content */
+
+    .content{
+        padding:50px 20px;
+    }
+
+    .content h2,.content h3{
+        margin:5px 0;
+        color:#484a46;
+    }
+    .content p b{
+        color:#484a46;
+    }
+
+    .content p{
+        margin:5px 0;
+        color:#787976;
+    }
+
+    .content ul{
+        padding:5px 10px 10px 10px;
+        list-style-type: disc;
+    }
+
+    .content ul li{
+        color:#787976;
+    }
+
+    .content ul li p{
+        padding:0 5px 2px 5px;
+    }
+
+    .content ul li b{
+        padding:5px 0 0 0;
+    }
+}
